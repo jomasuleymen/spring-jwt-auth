@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-auth-test
+
+  datasource:
+    url: jdbc:h2:mem:demo
+    username: user
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  liquibase:
+    enabled: false
+

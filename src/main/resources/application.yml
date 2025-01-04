@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-auth-app
+
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:h2:mem:demo
+    username: user
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  liquibase:
+    enabled: false
+
+springdoc:
+  swagger-ui:
+    path:
+
+logging:
+  file:
+    path: ./logs/
+
+security:
+  jwt:
+    access-token-expiration: 300 # 5 minutes
+    refresh-token-expiration: 2628000 # 1 month
+    secret: lkf348fj29j2903j209sdffj394f9lkf348fj29j2903j209sdffj394f9349fsdf23d3jd02349fsdf23d3jd02
