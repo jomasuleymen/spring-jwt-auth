@@ -28,3 +28,8 @@ This project demonstrates how to implement JWT (JSON Web Token) authentication i
    ```bash
    mvn spring-boot:run
    ```
+3. **Run the test**:
+
+   ```bash
+   mvn test
+   ```
